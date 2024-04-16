@@ -1,0 +1,55 @@
+body {
+    font-family: Georgia, serif;
+    color: #583b1f;
+    margin: 0;
+    padding: 20px;
+    background-image: linear-gradient(to right, #eae6e1, #eae6e1);
+    text-align: center;
+}
+
+h1 {
+    color: #583b1f;
+    font-family: Georgia, serif;
+    font-weight: 300;
+    border: none;
+}
+
+form {
+    background-color: #eae6e1;
+    border: none;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: none;
+    text-align: left;
+}
+
+button {
+    background-color: #583b1f;
+    color: #eae6e1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    display: block; /* Makes the image a block-level element */
+    max-width: 50%; /* Ensures the image is responsive and doesn't overflow its container */
+    max-height: 50%;
+    height: auto; /* Keeps the image's aspect ratio */
+    margin: 20px auto; /* Adds space above and below the image, and centers it horizontally */
+}
+
+#results, #additions-results {
+    margin-top: 20px;
+    padding: 10px;
+    background: #eae6e1;
+    border-radius: 8px;
+}
+

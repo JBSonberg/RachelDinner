@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Random Ingredient Selector</h1>
+    <form id="ingredientForm">
+        <fieldset>
+            <legend>Exclude Options</legend>
+            <!-- Exclusion Options -->
+            <div>
+                <input type="checkbox" id="is_red_meat" name="is_red_meat">
+                <label for="is_red_meat">Exclude Red Meat</label> <br>
+                <input type="checkbox" id="is_pork" name="is_pork">
+                <label for="is_pork">Exclude Pork</label> <br>
+                <input type="checkbox" id="is_poultry" name="is_poultry">
+                <label for="is_poultry">Exclude Poultry</label> <br>
+                <input type="checkbox" id="is_fish" name="is_fish">
+                <label for="is_fish">Exclude Fish</label> <br>
+                <input type="checkbox" id="is_shellfish" name="is_shellfish">
+                <label for="is_shellfish">Exclude Shellfish</label> <br>
+                <input type="checkbox" id="is_kosher" name="is_kosher">
+                <label for="is_kosher">Keep it Kosher</label> <br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Select Quantity</legend>
+            <label for="protein_quantity">protein:</label>
+            <input type="number" id="protein_quantity" name="protein_quantity" min="1" max="5">
+            <label for="additions_quantity">Additions:</label>
+            <input type="number" id="additions_quantity" name="additions_quantity" min="1" max="10">
+        </fieldset>
+        <button type="submit">Generate Ingredients</button>
+    </form>
+    <div id="results"></div>
+    <div id="additions-results"></div>
+
+    <img src="DinnerBoxPicture.jpg" alt="BoxOnCounter">
+    <script src="script.js"></script>
+</body>
+</html>
