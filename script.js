@@ -19,8 +19,8 @@ function fetchProtein() {
         quantity: document.getElementById('protein_quantity').value
     }).toString();
 
-    // Make the request to the server with the criteria for proteins
-    fetch(`/api/protein?${queryString}`)
+    // Update the URL to point to your deployed backend server
+    fetch(`https://162.233.27.149:80/api/protein?${queryString}`)
         .then(response => response.json())
         .then(data => displayProtein(data)) // Display the fetched proteins
         .catch(error => console.error('Error fetching protein:', error));
@@ -50,15 +50,15 @@ function fetchAdditions() {
         additions_quantity: document.getElementById('additions_quantity').value
     }).toString();
 
-    // Make the request to the server with the criteria for additions
-    fetch(`/api/additions?${queryString}`)
+    // Update the URL to point to your deployed backend server
+    fetch(`https://162.233.27.149:80/api/additions?${queryString}`)
         .then(response => response.json())
         .then(data => displayAdditions(data)) // Display the fetched additions
         .catch(error => console.error('Error fetching additions:', error));
 }
 
 function displayAdditions(additions) {
-    const additionsDiv = document.getElementById('additions-results'); // Add this div to your HTML
+    const additionsDiv = document.getElementById('additions-results'); // Ensure this div exists in your HTML
     additionsDiv.innerHTML = ''; // Clear previous results
 
     if (additions.length === 0) {
