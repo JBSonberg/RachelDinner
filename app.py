@@ -1,10 +1,8 @@
 from flask import Flask, request, jsonify, send_from_directory
 import sqlite3
-from flask_cors import CORS 
 import os
 
 app = Flask(__name__, static_url_path='', static_folder='.')
-CORS(app, resources={r"/api/*": {"origins": "http://ravenousrafinki.com/dinner-box"}})
 
 # Route to serve the front-end files
 @app.route('/')
@@ -75,5 +73,5 @@ def get_additions():
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 80))
+    port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port, debug=True)
