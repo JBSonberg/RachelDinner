@@ -1,4 +1,4 @@
-version: 1.0
+version: Python 3.11
 build:
   method: "Dockerfile"
   dockerfile: "Dockerfile"
