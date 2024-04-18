@@ -1,7 +1,7 @@
 version: Python 3.11
 build:
   method: "Dockerfile"
-  dockerfile: "Dockerfile"
+  dockerfile: "dockerfile"
   configuration_template: # Only if using a template
     name: mytemplate
 service:
